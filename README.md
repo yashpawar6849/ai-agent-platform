@@ -1,4 +1,4 @@
-# 🧠 AI Agent Platform
+# AI Agent Platform
 
 > A complete, from-scratch agent execution platform with SDK, Gateway, Harness, and Docker Sandbox — built to teach and extend.
 
@@ -20,7 +20,7 @@ This project exists to **make every layer visible and hackable**:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────┐       HTTP / WebSocket       ┌──────────────────┐
@@ -68,7 +68,7 @@ Client ──POST /agents/{id}/run──► Gateway
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -171,7 +171,7 @@ curl -X POST "http://localhost:8000/agents/<agent_id>/run" \
 
 ---
 
-## 🧩 Components in Detail
+##  Components in Detail
 
 ### SDK (`sdk/`)
 
@@ -298,7 +298,7 @@ Every sandboxed execution gets:
 
 ---
 
-## 🛠️ Built-in Tools
+##  Built-in Tools
 
 | Tool | Category | What It Does | Security |
 |------|----------|-------------|----------|
@@ -341,7 +341,7 @@ Then add the import and registration in:
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 ### LLM Backends
 
@@ -358,7 +358,7 @@ The backend is selected **per agent**, so you can have one agent using Mock and 
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 Run everything:
 
@@ -386,7 +386,7 @@ PYTHONPATH=. pytest tests/ -v
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ai-agent-platform/
@@ -435,7 +435,7 @@ ai-agent-platform/
 
 ---
 
-## 🔄 Extending the Platform
+##  Extending the Platform
 
 ### Add a Database
 Replace the in-memory `agents` and `runs` dicts in `gateway/dependencies.py` with SQLite or PostgreSQL.
@@ -451,7 +451,7 @@ Create a new `Orchestrator` class that instantiates multiple `AgentRunner`s and 
 
 ---
 
-## 📝 License
+##  License
 
 MIT
 
