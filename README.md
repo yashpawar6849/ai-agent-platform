@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 What Problem Does This Solve?
+##  What Problem Does This Solve?
 
 Agent frameworks are powerful, but they hide the mechanics. You call `agent.run()` and hope for the best. When something breaks, you're debugging a black box.
 
