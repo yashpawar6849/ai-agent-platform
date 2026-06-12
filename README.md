@@ -435,26 +435,6 @@ ai-agent-platform/
 
 ---
 
-##  Extending the Platform
-
-### Add a Database
-Replace the in-memory `agents` and `runs` dicts in `gateway/dependencies.py` with SQLite or PostgreSQL.
-
-### Make Runs Asynchronous
-Refactor `POST /agents/{id}/run` to return a `run_id` immediately, then run the harness in a background task while the client polls or streams.
-
-### Add Authentication
-Insert a FastAPI dependency on the Gateway routes that validates JWT tokens or API keys.
-
-### Add Multi-Agent Orchestration
-Create a new `Orchestrator` class that instantiates multiple `AgentRunner`s and routes tasks between them based on agent capabilities.
-
----
-
 ##  License
 
 MIT
-
----
-
-> **Built to teach, designed to extend.** Every layer is visible, every layer is testable, and every layer is replaceable.
