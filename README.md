@@ -111,7 +111,7 @@ If Docker is not running, start it before using sandboxed tools.
 
 ---
 
-## 🎮 Quickstart
+##  Quickstart
 
 ### Start the Gateway
 
